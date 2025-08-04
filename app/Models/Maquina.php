@@ -5,9 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\EstadoMaquina;
 use App\Models\Tareas;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Maquinas extends Model
+
+class Maquina extends Model
 {
+    //Llama a que use factory
+    use HasFactory;
+
     protected $table = 'maquinas';
 
 
